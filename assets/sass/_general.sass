@@ -1,0 +1,33 @@
+// By default, Sass transpiles all the .scss files directly. However, when you want to import a file, you do not need the file to be transpiled directly.
+
+// Sass has a mechanism for this: If you start the filename with an underscore, Sass will not transpile it. Files named this way are called partials in Sass.
+
+// So, a partial Sass file is named with a leading underscore.
+
+
+
+/* Header Styles */
+.menu
+   height: 92.51px
+   background-color: #cccccc
+   padding: 0px 62px
+   &_logo
+      position: absolute
+      left: 62px
+      &_img
+         width: 159px
+         height: 96px
+   &_navigation
+      display: flex
+      justify-content: space-between
+      text-align: center
+      margin-left: 305px
+      li
+         list-style-type: none
+         display: inline
+         padding: 51px 20px 20px 17.5px
+      a
+         margin-top: 51px
+         text-decoration: none
+         color: #444
+         font-size: 18px

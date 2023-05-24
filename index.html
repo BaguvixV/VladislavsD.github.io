@@ -1,35 +1,57 @@
-   <!DOCTYPE html>
-   <html lang="en">
-   <head>
-      <meta charset="UTF-8">
-      <meta http-equiv="X-UA-Compatible" content="IE=edge">
-      <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <title>Qualification Test</title>
-      <link rel="stylesheet" type="text/css" href="assets/css/style.css">
-      <link rel="stylesheet" href="css/bootstrap-reboot.min.css"> <!-- to set default web-page style like margin:0 padding:0 etc. -->
-      <link rel="stylesheet" href="css/bootstrap-grid.min.css"> <!-- to work with pre-set grids easier than just from scratch -->
-   </head>
-   <body>
-      <script src="assets/js/theme.js"></script>
-      <header>
-         <nav>
-            <ul class="menu">
-               <li><a href="#">Home</a></li>
-               <li><a href="#">About</a></li>
-               <li><a href="#">Contact</a></li>
+<!DOCTYPE html> <!-- indicates that this is an HTML5 document -->
+<html lang="en"> <!-- root element of the page and contains all other elements -->
+<head> <!-- contains information about the document that is not displayed on the page, such as the title of the page, which is shown in the browser tab -->
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Qualification Test</title>
+   <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+   <link rel="stylesheet" href="css/bootstrap-reboot.min.css"> <!-- to set default web-page style like margin:0 padding:0 etc. -->
+   <link rel="stylesheet" href="css/bootstrap-grid.min.css"> <!-- to work with pre-set grids easier than just from scratch -->
+</head>
+<body> <!-- contains the content of the page, including the header, main content, aside content, and footer -->
+   <script src="assets/js/theme.js"></script>
+   <header> <!-- contains the navigation menu, which is represented by a <nav> element and an unordered list <ul> with list items <li> and links <a> -->
+      <div class="container">
+         <nav class="menu">
+            <div class="menu_logo">
+               <a href="#"><img src="assets/img/logo.png" alt="logo_img.png" class="menu_logo_img"></a> <!-- !!! NOTE | To Do: Add image in CSS instead of HTML -->
+            </div>
+
+            <ul class="menu_navigation">
+               <li><a href="#">Ideja</a></li>
+               <li><a href="#">Piesaki Sapni</a></li>
+               <li><a href="#">Uzņēmējiem</a></li>
+               <li><a href="#">Sapņu banka</a></li>
+               <li><a href="#">Sapņus atbalsta</a></li>
+               <li><a href="#">99 Iedvesmas stāsti</a></li>
+               <li><a href="#">LV</a></li>
             </ul>
          </nav>
-         </header>
-         <main>
-            <h1>Welcome to Example Page</h1>
-            <p>This is a basic example of a page structure.</p>
-         </main>
-         <aside>
-            <h2>About Us</h2>
-            <p>We are a company that provides high-quality services to our customers.</p>
-         </aside>
-         <footer>
-            <p>Copyright © 2022 Example Company</p>
-         </footer>
-   </body>
-   </html>
+      </div>
+
+      <div class="subheader">
+         <!-- Place for subheader (under menu) img -->
+      </div>
+
+   </header>
+
+
+
+
+   <main> <!-- contains the main content of the page -->
+      <h1>Welcome to Example Page</h1>
+      <p>This is a basic example of a page structure.</p>
+   </main>
+
+   <aside> <!-- contains secondary content that is related to the main content of the page, such as a section about the company -->
+      <h2>About Us</h2>
+      <p>We are a company that provides high-quality services to our customers.</p>
+   </aside>
+
+   <footer> <!-- contains the footer information, such as a copyright notice -->
+      <p>Copyright © 2022 Example Company</p>
+   </footer>
+
+</body>
+</html>
