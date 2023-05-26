@@ -1,33 +1,73 @@
-// By default, Sass transpiles all the .scss files directly. However, when you want to import a file, you do not need the file to be transpiled directly.
-
-// Sass has a mechanism for this: If you start the filename with an underscore, Sass will not transpile it. Files named this way are called partials in Sass.
-
-// So, a partial Sass file is named with a leading underscore.
-
-
-
 /* Header Styles */
 .menu
-   height: 92.51px
-   background-color: #cccccc
+   position: relative
    padding: 0px 62px
+   background-color: $white
    &_logo
       position: absolute
-      left: 62px
+      z-index: 1
       &_img
          width: 159px
          height: 96px
    &_navigation
+      // position: relative
       display: flex
       justify-content: space-between
       text-align: center
-      margin-left: 305px
+      margin-left: 182px
       li
          list-style-type: none
-         display: inline
-         padding: 51px 20px 20px 17.5px
+         padding: 51px 0px 20px 22px
+         &:last-child // Makes different changes on last li element
+            padding-left: 51px
+
       a
-         margin-top: 51px
+         font-family: 'Montserrat', sans-serif
          text-decoration: none
-         color: #444
+         font-weight: 500
          font-size: 18px
+         color: $black
+   &:after
+      background: url("../../assets/img/header.png") bottom no-repeat
+      content: ""
+      position: absolute
+      top: 85.07px
+      left: 0
+      width: 100%
+      height: 34.93px
+
+      
+
+.intro
+   background: url("../../assets/img/sparkle_video.png") center center/cover no-repeat
+   position: relative
+   bottom: 47px
+   width: 100%
+   height: 722px
+   z-index: -1
+   &_video
+      &_btn
+         background: url("../../assets/icon/play.png") center no-repeat
+         position: absolute
+         top: 366px
+         left: 50%
+         width: 87px
+         height: 84px
+         border-radius: 100%
+         transform: translate(-50%) // Half width of the block to the left
+         border: none
+         text-align: center
+         &:hover
+            cursor: pointer
+.about
+   display: block
+   margin: 0px auto
+   padding: 150px 0px 169px 0px
+   width: 654px
+   p
+      width: 654px
+      height: 114px
+      font-family: 'Montserrat', sans-serif
+      font-size: 18px
+      text-align: center
+      color: $blue

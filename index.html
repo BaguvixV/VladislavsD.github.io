@@ -4,39 +4,53 @@
    <meta charset="UTF-8">
    <meta http-equiv="X-UA-Compatible" content="IE=edge">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+   <!-- Linking Google fonts -->
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&family=Oswald:wght@500&display=swap" rel="stylesheet">
+
    <title>Qualification Test</title>
    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+   
    <link rel="stylesheet" href="css/bootstrap-reboot.min.css"> <!-- to set default web-page style like margin:0 padding:0 etc. -->
    <link rel="stylesheet" href="css/bootstrap-grid.min.css"> <!-- to work with pre-set grids easier than just from scratch -->
 </head>
 <body> <!-- contains the content of the page, including the header, main content, aside content, and footer -->
    <script src="assets/js/theme.js"></script>
-   <header> <!-- contains the navigation menu, which is represented by a <nav> element and an unordered list <ul> with list items <li> and links <a> -->
-      <div class="container">
-         <nav class="menu">
-            <div class="menu_logo">
-               <a href="#"><img src="assets/img/logo.png" alt="logo_img.png" class="menu_logo_img"></a> <!-- !!! NOTE | To Do: Add image in CSS instead of HTML -->
-            </div>
+   <header class="menu"> <!-- contains the navigation menu, which is represented by a <nav> element and an unordered list <ul> with list items <li> and links <a> -->
+      <nav>
+         <div class="menu_logo">
+            <img src="assets/img/logo.png" alt="logo_img.png" class="menu_logo_img"> <!-- !!! NOTE | To Do: Add image in CSS instead of HTML -->
+         </div>
 
-            <ul class="menu_navigation">
-               <li><a href="#">Ideja</a></li>
-               <li><a href="#">Piesaki Sapni</a></li>
-               <li><a href="#">Uzņēmējiem</a></li>
-               <li><a href="#">Sapņu banka</a></li>
-               <li><a href="#">Sapņus atbalsta</a></li>
-               <li><a href="#">99 Iedvesmas stāsti</a></li>
-               <li><a href="#">LV</a></li>
-            </ul>
-         </nav>
-      </div>
-
-      <div class="subheader">
-         <!-- Place for subheader (under menu) img -->
-      </div>
-
+         <ul class="menu_navigation">
+            <li><a href="#">Ideja</a></li>
+            <li><a href="#">Piesaki Sapni</a></li>
+            <li><a href="#">Uzņēmējiem</a></li>
+            <li><a href="#">Sapņu banka</a></li>
+            <li><a href="#">Sapņus atbalsta</a></li>
+            <li><a href="#">99 Iedvesmas stāsti</a></li>
+            <li><a href="#">LV</a></li>
+         </ul>
+      </nav>
    </header>
 
+   <!-- VAJADZĒS PABEIGT -->
+   <section class="intro">
+      <div class="intro_video">
+         <button class="intro_video_btn"></button>
+      </div>
+   </section>
 
+   <!-- VAJADZĒS PABEIGT -->
+   <section class="about">
+      <div class="container"> <!-- !!! NESTRĀDĀ container Bootstrap fīča !!! -->
+         <p>
+            SparkleHeart ir biedrība, kas radīta, lai palīdzētu cilvēkiem piepildīt pat pārdrošākos sapņus. Šeit satiekas sapņotāji un viņu atbalstītāji - uzņēmumi, kas sniedz palīdzīgu roku, lai kopā pasauli padarītu par labāku vietu mums visiem.Mēs esam gatavi palīdzēt Tev piepildīt sapni. Kā pamats iedvesmai - tiek radīti arī 99 stāsti par Latvijas sievietēm.
+         </p>
+      </div>
+   </section>
 
 
    <main> <!-- contains the main content of the page -->
