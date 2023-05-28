@@ -29,7 +29,7 @@
       font-weight: 500;
       font-size: 18px;
       color: #000000; }
-  .menu:after {
+  .menu::after {
     background: url("../../assets/img/header.png") bottom no-repeat;
     content: "";
     position: absolute;
@@ -57,8 +57,6 @@
             transform: translate(-50%);
     border: none;
     text-align: center; }
-    .intro_video_btn:hover {
-      cursor: pointer; }
 
 .about {
   display: block;
@@ -108,7 +106,7 @@
     .gallery_grid-container_img5 {
       background: url("../img/gallery/5.jpg") center center/cover no-repeat;
       height: 191px; }
-    .gallery_grid-container:before {
+    .gallery_grid-container::before {
       background: url("../../assets/img/gallery/ripped-up.png") bottom no-repeat;
       content: "";
       position: absolute;
@@ -116,7 +114,7 @@
       left: 0;
       width: 100%;
       height: 40px; }
-    .gallery_grid-container:after {
+    .gallery_grid-container::after {
       background: url("../../assets/img/gallery/ripped-down.png") bottom no-repeat;
       content: "";
       position: absolute;
@@ -152,6 +150,8 @@
       color: #FFFFFF;
       font-family: "Montserrat";
       font-size: 18px; }
+      .agree_container_1 button:hover {
+        cursor: pointer; }
     .agree_container_2 h2 {
       font-family: "Oswald";
       font-weight: 500;
@@ -169,6 +169,97 @@
       color: #FFFFFF;
       font-family: "Montserrat";
       font-size: 18px; }
+      .agree_container_2 button:hover {
+        cursor: pointer; }
+
+.contactf {
+  padding: 0px 0px 150px 0px; }
+  .contactf_container {
+    margin: 0px auto;
+    width: 612px; }
+    .contactf_container h3 {
+      margin-bottom: 55px;
+      text-align: center;
+      font-family: "Oswald";
+      font-weight: 500;
+      font-size: 30px;
+      text-transform: uppercase; }
+    .contactf_container p {
+      font-family: "Montserrat";
+      font-style: normal;
+      font-weight: 400;
+      font-size: 14px;
+      color: #2F4858; }
+    .contactf_container_check {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      margin-top: 28px; }
+      .contactf_container_check_1 {
+        margin-right: 21px; }
+      .contactf_container_check_2 p {
+        font-family: "Montserrat";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        color: #2F4858; }
+
+input[type=text], textarea {
+  width: 612px;
+  height: 43px;
+  border: none;
+  background: rgba(196, 196, 196, 0.4);
+  border-radius: 8px;
+  margin-top: 6px;
+  margin-bottom: 15px; }
+  input[type=text]::-webkit-input-placeholder, textarea::-webkit-input-placeholder {
+    padding-top: 13px;
+    padding-left: 12px;
+    color: #2F4858;
+    font-family: "Montserrat";
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 22px; }
+  input[type=text]:-ms-input-placeholder, textarea:-ms-input-placeholder {
+    padding-top: 13px;
+    padding-left: 12px;
+    color: #2F4858;
+    font-family: "Montserrat";
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 22px; }
+  input[type=text]::-ms-input-placeholder, textarea::-ms-input-placeholder {
+    padding-top: 13px;
+    padding-left: 12px;
+    color: #2F4858;
+    font-family: "Montserrat";
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 22px; }
+  input[type=text]::placeholder, textarea::placeholder {
+    padding-top: 13px;
+    padding-left: 12px;
+    color: #2F4858;
+    font-family: "Montserrat";
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 22px; }
+
+input[type=submit] {
+  display: block;
+  margin: 0px auto;
+  margin-top: 50px;
+  border: none;
+  border-radius: 35px;
+  width: 182px;
+  height: 62px;
+  color: #FFFFFF;
+  background-color: #FFA800;
+  font-family: "Montserrat";
+  font-weight: 500;
+  font-size: 24px; }
+  input[type=submit]::hover {
+    cursor: pointer; }
 
 * {
   margin: 0px;
