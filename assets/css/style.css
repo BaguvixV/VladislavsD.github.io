@@ -303,27 +303,39 @@ footer {
     left: 0px;
     width: 100%;
     height: 375px; }
-  footer .row {
-    background-color: #3a586c; }
   footer .footer_column {
-    padding: 0px; }
-    footer .footer_column:last-child {
-      text-align: right;
-      color: red; }
+    padding: 0px;
+    line-height: 26px; }
     footer .footer_column h4 {
       -ms-flex-line-pack: justify;
           align-content: space-between;
       font-family: "Montserrat";
       font-weight: 500;
-      font-size: 24px;
+      font-size: 21px;
       color: #FFFFFF; }
+    footer .footer_column p {
+      font-size: 14px;
+      color: #FFFFFF;
+      line-height: 18px; }
+    footer .footer_column_p1 {
+      margin-top: 70px; }
+    footer .footer_column_p2 {
+      margin-top: 51px; }
     footer .footer_column ul {
       list-style-type: none;
       padding: 0px; }
     footer .footer_column li {
       font-family: "Montserrat";
       font-weight: 500;
-      font-size: 18px;
+      font-size: 16px;
       color: #FFFFFF; }
+    footer .footer_column_menu {
+      line-height: 40px; }
+    footer .footer_column:last-child {
+      text-align: right; }
+      footer .footer_column:last-child .img_container {
+        margin-top: 52px; }
+        footer .footer_column:last-child .img_container img:last-child {
+          padding-left: 29px; }
 
 /*# sourceMappingURL=style.css.map */
