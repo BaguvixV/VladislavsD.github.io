@@ -30,7 +30,7 @@
       font-size: 18px;
       color: #000000; }
   .menu::after {
-    background: url("../../assets/img/header.png") bottom no-repeat;
+    background: url("../../assets/img/header2.png") bottom no-repeat;
     content: "";
     position: absolute;
     top: 85.07px;
@@ -280,7 +280,6 @@ input[type=submit] {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    padding: 0px 168px 0px 168px;
     margin-top: 89px; }
   .sponsors::before {
     position: absolute;
@@ -337,5 +336,41 @@ footer {
         margin-top: 52px; }
         footer .footer_column:last-child .img_container img:last-child {
           padding-left: 29px; }
+
+@media (min-width: 1200px) and (max-width: 1279px) {
+  .menu_navigation li a {
+    font-size: 16px; }
+
+  footer .container {
+    background-color: #646464; } }
+@media (min-width: 992px) and (max-width: 1199.98px) {
+  .menu_navigation {
+    margin-left: 175px; }
+    .menu_navigation li {
+      padding-left: 14px; }
+      .menu_navigation li:last-child {
+        padding-left: 23px; }
+      .menu_navigation li a {
+        font-size: 13px; }
+
+  footer .container {
+    background-color: #646464; } }
+@media (min-width: 768px) and (max-width: 991.98px) {
+  footer .container {
+    background-color: #757575; } }
+@media (min-width: 576px) and (max-width: 767.98px) {
+  .intro {
+    width: 768px;
+    height: 406px; }
+
+  footer .container {
+    background-color: #888888; } }
+@media (min-width: 320px) and (max-width: 575.98px) {
+  .intro {
+    width: 987px;
+    height: 520px; }
+
+  footer .container {
+    background-color: #888888; } }
 
 /*# sourceMappingURL=style.css.map */

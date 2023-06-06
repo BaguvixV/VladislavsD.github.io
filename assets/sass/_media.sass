@@ -1,0 +1,57 @@
+// Extra large devices (large desktops)
+// No media query since the extra-large breakpoint has no upper bound on its width
+
+@media (min-width: 1200px) and (max-width: 1279px)
+   .menu
+      &_navigation
+         li
+            a
+               font-size: 16px
+   footer
+      .container
+         background-color: #646464
+
+
+// Large devices (desktops, less than 1200px)
+@media (min-width: 992px) and (max-width: 1199.98px)
+   .menu
+      &_navigation
+         margin-left: 175px
+         li
+            padding-left: 14px
+            &:last-child // Makes different changes on last li element
+               padding-left: 23px
+            a
+               font-size: 13px
+   footer
+      .container
+         background-color: #646464
+
+
+// Medium devices (tablets, less than 992px)
+@media (min-width: 768px) and (max-width: 991.98px)
+   footer
+      .container
+         background-color: #757575
+
+
+// Small devices (landscape phones, less than 768px)
+@media (min-width: 576px) and (max-width: 767.98px)
+   .intro
+      width: 768px
+      height: 406px
+   footer
+      .container
+         background-color: #888888
+
+
+// Extra small devices (portrait phones, less than 576px)
+@media (min-width: 320px) and (max-width: 575.98px)
+   .intro
+      // width: 320px
+      // height: 169px
+      width: 987px
+      height: 520px
+   footer
+      .container
+         background-color: #888888

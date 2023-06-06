@@ -14,11 +14,11 @@
    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
    
    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap-reboot.min.css">
-   <link rel="stylesheet" href="assets/bootstrap/css/bootstrap-grid.min.css"> <!-- to work with pre-set grids easier than just from scratch -->
+   <link rel="stylesheet" href="assets/bootstrap/css/bootstrap-grid.min.css">
 </head>
-<body> <!-- contains the content of the page, including the header, main content, aside content, and footer -->
+<body>
    <script src="assets/js/theme.js"></script>
-   <header class="menu"> <!-- contains the navigation menu, which is represented by a <nav> element and an unordered list <ul> with list items <li> and links <a> -->
+   <header class="menu">
       <nav>
          <div class="menu_logo">
             <img src="assets/img/logo.png" alt="logo_img.png" class="menu_logo_img"> <!-- !!! NOTE | To Do: Add image in CSS instead of HTML -->
@@ -43,7 +43,7 @@
    </section>
 
    <section class="about">
-      <div class="container"> <!-- !!! NESTRĀDĀ container Bootstrap fīča !!! -->
+      <div class="container">
          <p>
             SparkleHeart ir biedrība, kas radīta, lai palīdzētu cilvēkiem piepildīt pat pārdrošākos sapņus. Šeit satiekas sapņotāji un viņu atbalstītāji - uzņēmumi, kas sniedz palīdzīgu roku, lai kopā pasauli padarītu par labāku vietu mums visiem.Mēs esam gatavi palīdzēt Tev piepildīt sapni. Kā pamats iedvesmai - tiek radīti arī 99 stāsti par Latvijas sievietēm.
          </p>
@@ -77,35 +77,39 @@
 
 
    <section class="contactf">
-      <div class="contactf_container">
-         <h3>Sazināties ar mums</h3>
-         <input  required type="text" id="fname" name="firstname" placeholder="Vārds, Uzvārds*">
-         <input  required type="text" id="lname" name="lastname" placeholder="E-pasts*">
-         <input  required type="text" id="lname" name="lastname" placeholder="Telefons*">
-         <textarea  required id="subject" name="subject" placeholder="Jautājums, vai komentārs*" style="width:612px"></textarea>
-         <p>* obligāti aizpildāmie lauki</p>
-         <div class="contactf_container_check">
-            <div class="contactf_container_check_1">
-               <input type="checkbox">
+      <div class="container">
+         <div class="contactf_container">
+            <h3>Sazināties ar mums</h3>
+            <input  required type="text" id="fname" name="firstname" placeholder="Vārds, Uzvārds*">
+            <input  required type="text" id="lname" name="lastname" placeholder="E-pasts*">
+            <input  required type="text" id="lname" name="lastname" placeholder="Telefons*">
+            <textarea  required id="subject" name="subject" placeholder="Jautājums, vai komentārs*" style="width:612px"></textarea>
+            <p>* obligāti aizpildāmie lauki</p>
+            <div class="contactf_container_check">
+               <div class="contactf_container_check_1">
+                  <input type="checkbox">
+               </div>
+               <div class="contactf_container_check_2">
+                  <p>Piekrītu, ka mani dati tiks izmantoti likumdošanā noteiktā kārtībā un tiks saglabāti līdz brīdim, kamēr tas būs nepieciešams.</p>
+               </div>
             </div>
-            <div class="contactf_container_check_2">
-               <p>Piekrītu, ka mani dati tiks izmantoti likumdošanā noteiktā kārtībā un tiks saglabāti līdz brīdim, kamēr tas būs nepieciešams.</p>
-            </div>
-         </div>
-         <input type="submit" value="Sūtīt">
-       </form>
-     </div>
+            <input type="submit" value="Sūtīt">
+          </form>
+        </div>
+      </div>
    </section>
 
 
    <section class="sponsors">
-      <h2 class="sponsors_title">Atbalstītāji</h2>
-         <div class="sponsors_container">
-            <img src="assets/img/sponsor/teikums.png" alt="teikums.png">
-            <img src="assets/img/sponsor/sem.png" alt="teikums.png">
-            <img src="assets/img/sponsor/citybee.png" alt="teikums.png">
-            <img src="assets/img/sponsor/linearis.png" alt="teikums.png">
-         </div>
+      <div class="container">
+         <h2 class="sponsors_title">Atbalstītāji</h2>
+            <div class="sponsors_container">
+               <img src="assets/img/sponsor/teikums.png" alt="teikums.png">
+               <img src="assets/img/sponsor/sem.png" alt="teikums.png">
+               <img src="assets/img/sponsor/citybee.png" alt="teikums.png">
+               <img src="assets/img/sponsor/linearis.png" alt="teikums.png">
+            </div>
+      </div>
    </section>
 
    <footer>
