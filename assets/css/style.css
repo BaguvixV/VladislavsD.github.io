@@ -30,7 +30,7 @@
       font-size: 18px;
       color: #000000; }
   .menu::after {
-    background: url("../../assets/img/header2.png") bottom no-repeat;
+    background: url("../img/header2.png") bottom no-repeat;
     content: "";
     position: absolute;
     top: 85.07px;
@@ -356,9 +356,27 @@ footer {
   footer .container {
     background-color: #646464; } }
 @media (min-width: 768px) and (max-width: 991.98px) {
+  .menu {
+    height: 74.01px; }
+    .menu_logo {
+      top: 0px; }
+      .menu_logo_img {
+        width: 128px;
+        height: 81px; }
+    .menu_navigation {
+      display: none; }
+    .menu::after {
+      background-image: url("../img/tablet/header_after.png");
+      top: 68.06px; }
+    .menu_bar {
+      background-image: url("../icon/menu.png"); }
+
   .intro {
+    bottom: 6.75px;
     width: 100%;
     height: 406px; }
+    .intro_video_btn {
+      top: 162px; }
 
   .agree_container {
     width: 100%; }
