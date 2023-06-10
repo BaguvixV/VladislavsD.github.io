@@ -10,12 +10,8 @@
       width: 159px;
       height: 96px; }
   .menu_navigation {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
+    justify-content: space-between;
     text-align: center;
     margin-left: 182px; }
     .menu_navigation li {
@@ -53,8 +49,7 @@
     width: 87px;
     height: 84px;
     border-radius: 100%;
-    -webkit-transform: translate(-50%);
-            transform: translate(-50%);
+    transform: translate(-50%);
     border: none;
     text-align: center; }
 
@@ -126,13 +121,10 @@
 .agree {
   padding: 150px 0px 150px 0px; }
   .agree_container {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
     margin: 0px auto;
     width: 987px;
-    -ms-flex-pack: distribute;
-        justify-content: space-around; }
+    justify-content: space-around; }
     .agree_container_1 h2 {
       font-family: "Oswald";
       font-weight: 500;
@@ -190,8 +182,6 @@
       font-size: 14px;
       color: #2F4858; }
     .contactf_container_check {
-      display: -webkit-box;
-      display: -ms-flexbox;
       display: flex;
       margin-top: 28px; }
       .contactf_container_check_1 {
@@ -210,30 +200,6 @@ input[type=text], textarea {
   border-radius: 8px;
   margin-top: 6px;
   margin-bottom: 15px; }
-  input[type=text]::-webkit-input-placeholder, textarea::-webkit-input-placeholder {
-    padding-top: 13px;
-    padding-left: 12px;
-    color: #2F4858;
-    font-family: "Montserrat";
-    font-weight: 400;
-    font-size: 18px;
-    line-height: 22px; }
-  input[type=text]:-ms-input-placeholder, textarea:-ms-input-placeholder {
-    padding-top: 13px;
-    padding-left: 12px;
-    color: #2F4858;
-    font-family: "Montserrat";
-    font-weight: 400;
-    font-size: 18px;
-    line-height: 22px; }
-  input[type=text]::-ms-input-placeholder, textarea::-ms-input-placeholder {
-    padding-top: 13px;
-    padding-left: 12px;
-    color: #2F4858;
-    font-family: "Montserrat";
-    font-weight: 400;
-    font-size: 18px;
-    line-height: 22px; }
   input[type=text]::placeholder, textarea::placeholder {
     padding-top: 13px;
     padding-left: 12px;
@@ -271,15 +237,9 @@ input[type=submit] {
     text-align: center;
     color: #2F4858; }
   .sponsors_container {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    justify-content: space-between;
+    align-items: center;
     margin-top: 89px; }
   .sponsors::before {
     position: absolute;
@@ -306,8 +266,6 @@ footer {
     padding: 0px;
     line-height: 26px; }
     footer .footer_column h4 {
-      -ms-flex-line-pack: justify;
-          align-content: space-between;
       font-family: "Montserrat";
       font-weight: 500;
       font-size: 21px;
@@ -378,8 +336,34 @@ footer {
     .intro_video_btn {
       top: 162px; }
 
+  .about {
+    padding: 150px 0px 150px 0px; }
+    .about p {
+      width: 608px;
+      height: 140px; }
+
+  .gallery_grid-container_img1 {
+    width: 184px;
+    height: 200px; }
+  .gallery_grid-container_img2 {
+    width: 188px;
+    height: 206px; }
+  .gallery_grid-container_img3 {
+    width: 167px;
+    height: 102px; }
+  .gallery_grid-container_img4 {
+    width: 229px;
+    height: 216px; }
+  .gallery_grid-container_img5 {
+    width: 167px;
+    height: 104px; }
+
   .agree_container {
     width: 100%; }
+    .agree_container_1 h2 {
+      font-size: 18px; }
+    .agree_container_2 h2 {
+      font-size: 18px; }
 
   .sponsors_container .img1 {
     width: 144px;
@@ -395,7 +379,11 @@ footer {
     height: 71px; }
 
   footer .container {
-    background-color: #757575; } }
+    background-color: #757575; }
+    footer .container .row {
+      align-content: space-around; }
+  footer .footer_hidden {
+    display: none; } }
 @media (min-width: 576px) and (max-width: 767.98px) {
   .intro {
     width: 768px;
