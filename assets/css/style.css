@@ -385,16 +385,54 @@ footer {
   footer .footer_hidden {
     display: none; } }
 @media (min-width: 576px) and (max-width: 767.98px) {
-  .intro {
-    width: 768px;
-    height: 406px; }
-
   footer .container {
     background-color: #888888; } }
 @media (min-width: 320px) and (max-width: 575.98px) {
+  .menu {
+    height: 74.01px; }
+    .menu_logo {
+      top: 0px; }
+      .menu_logo_img {
+        width: 78px;
+        height: 72px; }
+    .menu_navigation {
+      display: none; }
+    .menu::after {
+      background-image: url("../img/tablet/header_after.png");
+      top: 68.06px; }
+    .menu_bar {
+      background-image: url("../icon/menu.png"); }
+
   .intro {
-    width: 987px;
-    height: 520px; }
+    bottom: 6.75px;
+    width: 100%;
+    height: 169px; }
+    .intro_video_btn {
+      top: 162px; }
+
+  .about {
+    padding: 80px 0px 80px 0px; }
+    .about p {
+      width: 280px;
+      height: 124px; }
+
+  .agree_container {
+    display: block;
+    width: 100%; }
+    .agree_container_1 h2 {
+      font-size: 18px; }
+    .agree_container_2 h2 {
+      font-size: 18px; }
+
+  .contactf {
+    padding: 0px 0px 121px 0px; }
+    .contactf_container {
+      width: 280px; }
+      .contactf_container input[type=text] {
+        width: 100%; }
+      .contactf_container textarea {
+        width: 280px;
+        height: 150px; }
 
   footer .container {
     background-color: #888888; } }

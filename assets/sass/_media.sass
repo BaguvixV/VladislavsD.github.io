@@ -133,9 +133,7 @@
 
 // Small devices (landscape phones, less than 768px)
 @media (min-width: 576px) and (max-width: 767.98px)
-   .intro
-      width: 768px
-      height: 406px
+
    footer
       .container
          background-color: #888888
@@ -143,11 +141,77 @@
 
 // Extra small devices (portrait phones, less than 576px)
 @media (min-width: 320px) and (max-width: 575.98px)
+
+   // 'MENU / HEADER' SECTION
+
+   .menu
+      height: 74.01px
+      &_logo
+         top: 0px
+         &_img
+            width: 78px
+            height: 72px
+      &_navigation
+         display: none
+      &::after
+         background-image: url("../img/tablet/header_after.png")
+         top: 68.06px
+      &_bar
+         background-image: url("../icon/menu.png")
+
+   // 'INTRO' SECTION
+
    .intro
-      // width: 320px
-      // height: 169px
-      width: 987px
-      height: 520px
+      bottom: 6.75px
+      width: 100%
+      height: 169px
+      &_video
+         &_btn
+            top: 162px
+
+   // 'ABOUT' SECTION
+
+   .about
+      padding: 80px 0px 80px 0px
+      p
+         width: 280px
+         height: 124px
+
+   // 'GALLERY' SECTION
+   // 'AGREE' SECTION
+
+   .agree
+      &_container
+         display: block
+         width: 100%
+         &_1
+            h2
+               font-size: 18px
+            button
+         &_2
+            h2
+               font-size: 18px
+            button
+
+   // 'CONTACTF' SECTION
+
+   .contactf
+      padding: 0px 0px 121px 0px
+      &_container
+         width: 280px
+         input[type=text]
+            width: 100%
+         textarea
+            width: 280px
+            height: 150px
+         &_check
+            // display: flex
+   
+   // 'SPONSORS' SECTION
+
+
+   // 'FOOTER' SECTION
+
    footer
       .container
          background-color: #888888
