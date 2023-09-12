@@ -12,31 +12,38 @@
 
    <title>Qualification Test</title>
    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+   <link rel="stylesheet" href="assets/js/theme.js">
    
    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap-reboot.min.css">
    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap-grid.min.css">
 </head>
 <body>
    <script src="assets/js/theme.js"></script>
-   <header class="menu">
+   <header class="menu mobile-menu">
       <nav>
-         <div class="menu_logo">
-            <img src="assets/img/logo.png" alt="logo_img.png" class="menu_logo_img"> <!-- !!! NOTE | To Do: Add image in CSS instead of HTML -->
+         <div class="menu_logo mobile-menu_logo">
+            <!-- !!! NOTE | To Do: Add image in CSS instead of HTML -->
+            <a href="#home" class="active">
+               <img src="assets/img/logo.png" alt="logo_img.png" class="menu_logo_img mobile-menu_logo_img">
+            </a>
          </div>
-
-         <ul class="menu_navigation">
-            <li><a href="#">Ideja</a></li>
-            <li><a href="#">Piesaki Sapni</a></li>
-            <li><a href="#">Uzņēmējiem</a></li>
-            <li><a href="#">Sapņu banka</a></li>
-            <li><a href="#">Sapņus atbalsta</a></li>
-            <li><a href="#">99 Iedvesmas stāsti</a></li>
+         <ul class="menu_navigation mobile-menu_navigation" id="myLinks">
+            <li><a href="#ideja">Ideja</a></li>
+            <li><a href="#piesaki-sapni">Piesaki Sapni</a></li>
+            <li><a href="#uznemejiem">Uzņēmējiem</a></li>
+            <li><a href="#sapnu-banka">Sapņu banka</a></li>
+            <li><a href="#sapnu-atbalsts">Sapņus atbalsta</a></li>
+            <li><a href="#iedvesmas-stasti">99 Iedvesmas stāsti</a></li>
             <li><a href="#">LV</a></li>
          </ul>
+         
+         <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+         </a>
 
-         <div class="menu_bar">
+         <!-- <div class="menu_bar"> -->
             <!-- Visible only tablets and mobile phones -->
-         </div>
+         <!-- </div> -->
+
       </nav>
    </header>
 
@@ -48,9 +55,11 @@
 
    <section class="about">
       <div class="container">
-         <p>
-            SparkleHeart ir biedrība, kas radīta, lai palīdzētu cilvēkiem piepildīt pat pārdrošākos sapņus. Šeit satiekas sapņotāji un viņu atbalstītāji - uzņēmumi, kas sniedz palīdzīgu roku, lai kopā pasauli padarītu par labāku vietu mums visiem.Mēs esam gatavi palīdzēt Tev piepildīt sapni. Kā pamats iedvesmai - tiek radīti arī 99 stāsti par Latvijas sievietēm.
-         </p>
+         <div class="text-container">
+            <p>
+               SparkleHeart ir biedrība, kas radīta, lai palīdzētu cilvēkiem piepildīt pat pārdrošākos sapņus. Šeit satiekas sapņotāji un viņu atbalstītāji - uzņēmumi, kas sniedz palīdzīgu roku, lai kopā pasauli padarītu par labāku vietu mums visiem.Mēs esam gatavi palīdzēt Tev piepildīt sapni. Kā pamats iedvesmai - tiek radīti arī 99 stāsti par Latvijas sievietēm.
+            </p>
+         </div>
       </div>
    </section>
 
@@ -65,7 +74,7 @@
        </div>
    </section>
 
-   <section class="agree">
+   <section class="agree" id="piesaki-sapni">
       <div class="container">
          <div class="agree_container">
             <div class="agree_container_1">
@@ -73,7 +82,7 @@
                <button>Sapņotājiem</button>
             </div>
             <div class="agree_container_2">
-               <h2>Vēlies palīdzēt piepildīt sapni?</h2>
+               <h2>Vēlies palīdzēt kādam piepildīt sapni?</h2>
                <button>Uzņēmējiem</button>
             </div>
          </div>
@@ -82,7 +91,7 @@
 
 
 
-   <section class="contactf">
+   <section class="contactf" id="uznemejiem">
       <div class="container">
          <div class="contactf_container">
             <h3>Sazināties ar mums</h3>
@@ -90,7 +99,7 @@
             <input  required type="text" id="lname" name="lastname" placeholder="E-pasts*">
             <input  required type="text" id="lname" name="lastname" placeholder="Telefons*">
             <textarea  required id="subject" name="subject" placeholder="Jautājums, vai komentārs*" style="width:612px"></textarea>
-            <p>* obligāti aizpildāmie lauki</p>
+            <p class="contactf_container_p">* obligāti aizpildāmie lauki</p>
             <div class="contactf_container_check">
                <div class="contactf_container_check_1">
                   <input type="checkbox">

@@ -63,7 +63,7 @@
   margin: 0px auto;
   padding: 150px 0px 169px 0px;
   width: 654px; }
-  .about p {
+  .about .text-container p {
     width: 654px;
     height: 114px;
     font-family: "Montserrat", sans-serif;
@@ -134,10 +134,12 @@
     -ms-flex-pack: distribute;
         justify-content: space-around; }
     .agree_container_1 h2 {
+      color: #2F4858;
+      text-align: center;
       font-family: "Oswald";
-      font-weight: 500;
+      text-transform: uppercase;
       font-size: 24px;
-      text-align: center; }
+      font-weight: 500; }
     .agree_container_1 button {
       display: block;
       margin: 0px auto;
@@ -153,10 +155,12 @@
       .agree_container_1 button:hover {
         cursor: pointer; }
     .agree_container_2 h2 {
+      color: #2F4858;
+      text-align: center;
       font-family: "Oswald";
-      font-weight: 500;
+      text-transform: uppercase;
       font-size: 24px;
-      text-align: center; }
+      font-weight: 500; }
     .agree_container_2 button {
       display: block;
       margin: 0px auto;
@@ -360,20 +364,20 @@ footer {
   footer .container {
     background-color: #646464; } }
 @media (min-width: 768px) and (max-width: 991.98px) {
-  .menu {
-    height: 74.01px; }
-    .menu_logo {
-      top: 0px; }
-      .menu_logo_img {
-        width: 128px;
-        height: 81px; }
-    .menu_navigation {
+  .mobile-menu {
+    height: 74.01px;
+    background-color: #a8946f; }
+    .mobile-menu_logo_img {
+      width: 128px;
+      height: 81px; }
+    .mobile-menu #myLinks {
       display: none; }
-    .menu::after {
+    .mobile-menu_navigation li a {
+      text-align: center;
+      font-size: 24px; }
+    .mobile-menu::after {
       background-image: url("../img/tablet/header_after.png");
       top: 68.06px; }
-    .menu_bar {
-      background-image: url("../icon/menu.png"); }
 
   .intro {
     bottom: -5.3px;
@@ -381,14 +385,34 @@ footer {
     .intro_video_btn {
       top: 162px; }
 
-  .about p {
+  .about .text-container p {
     width: 608px; }
 
   .agree_container {
     width: 100%; }
+    .agree_container_1 {
+      -webkit-box-ordinal-group: 3;
+          -ms-flex-order: 2;
+              order: 2; }
+      .agree_container_1 h2 {
+        font-size: 18px;
+        width: 233px;
+        height: 54px; }
+    .agree_container_2 {
+      -webkit-box-ordinal-group: 2;
+          -ms-flex-order: 1;
+              order: 1; }
+      .agree_container_2 h2 {
+        font-size: 18px;
+        width: 233px;
+        height: 54px; }
 
   .contactf_container textarea {
     height: 230px; }
+  .contactf_container_p {
+    margin-top: 15px; }
+  .contactf_container_check {
+    margin-top: 10px; }
 
   .sponsors {
     height: 317.6px; }

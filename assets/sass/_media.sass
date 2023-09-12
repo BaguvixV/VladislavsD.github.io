@@ -39,23 +39,27 @@
 
 // Medium devices (tablets, less than 992px)
 @media (min-width: 768px) and (max-width: 991.98px)
-
-   .menu
-      // padding: 74.01px 0px 10px 62px
+   .mobile-menu
+      // overflow: hidden
       height: 74.01px
+      background-color: #a8946f
       &_logo
-         top: 0px
          &_img
             width: 128px
             height: 81px
+      #myLinks
+         display: none //NEED TO REMOVE COMMENT!/ still isn't removed for testing
       &_navigation
-         display: none
+         li
+            a
+               text-align: center
+               font-size: 24px
+               // padding: 14px 16px
+               // display: block
       &::after
          background-image: url("../img/tablet/header_after.png")
          top: 68.06px
-      &_bar
-         background-image: url("../icon/menu.png")
-   
+
    .intro
       bottom: -5.3px
       height: 406px
@@ -64,18 +68,36 @@
             top: 162px
    
    .about
-      p
-         width: 608px
+      .text-container
+         p
+            width: 608px
    
    .agree
       &_container
          width: 100%
+         &_1
+            order: 2
+            h2
+               font-size: 18px
+               width: 233px
+               height: 54px
+         &_2
+            order: 1
+            h2
+               font-size: 18px
+               width: 233px
+               height: 54px
+                  
 
 
    .contactf
       &_container
          textarea
             height: 230px
+         &_p
+            margin-top: 15px
+         &_check
+            margin-top: 10px
 
 
 
