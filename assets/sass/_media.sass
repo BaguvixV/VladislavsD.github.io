@@ -1,5 +1,5 @@
-// Extra large devices (large desktops)
-// No media query since the extra-large breakpoint has no upper bound on its width
+//* Extra large devices (large desktops) */
+//* No media query since the extra-large breakpoint has no upper bound on its width */
 
 @media (min-width: 1200px) and (max-width: 1279px)
 
@@ -15,18 +15,18 @@
 
 
 
-// Large devices (desktops, less than 1200px)
+//* Large devices (desktops, less than 1200px)
 @media (min-width: 992px) and (max-width: 1199.98px)
 
    html,body
       overflow-x: hidden
-      ///pateicoties šim noņemās baltās svītras labajā stūrī (responsivitātes laikā var pamanīt atšķirību)
+      //* pateicoties šim noņemās baltās svītras labajā stūrī (responsivitātes laikā var pamanīt atšķirību) */
    .menu
       &_navigation
          margin-left: 175px
          li
             padding-left: 14px
-            &:last-child // Makes different changes on last li element
+            &:last-child //* Makes different changes on last li element */
                padding-left: 23px
             a
                font-size: 13px
@@ -37,7 +37,7 @@
 
 
 
-// Medium devices (tablets, less than 992px)
+//* Medium devices (tablets, less than 992px)
 @media (min-width: 768px) and (max-width: 991.98px)
    .mobile-menu
       // overflow: hidden
@@ -47,8 +47,46 @@
          &_img
             width: 128px
             height: 81px
-      #myLinks
-         display: none //NEED TO REMOVE COMMENT!/ still isn't removed for testing
+      #mobile-menu_toggle
+         display: block //* Lai varētu viņu bīdīt uz visām pusēm */
+         position: relative
+         width: 32px
+         height: 32px
+         top: 35px
+         left: 97%
+         z-index: 1
+         -webkit-user-select: none
+         user-select: none
+         input
+            display: block
+            width: 33px
+            height: 33px
+            position: absolute
+            top: -5px
+            left: 0px
+
+            cursor: pointer
+
+            // opacity: 0 //* hide this */
+            opacity: 0.5
+            z-index: 2 //* and place it over the hamburger */
+
+            -webkit-touch-callout: none
+         span
+            display: block
+            width: 33px
+            height: 4px
+            margin-bottom: 5px
+            position: relative
+            background: #9e1212
+            border-radius: 3px
+            // z-index: 3
+            z-index: 1
+            transform-origin: 4px 0px
+
+            transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0), background 0.5s cubic-bezier(0.77,0.2,0.05,1.0), opacity 0.55s ease
+         #mobile-menu_bar
+            display: none //* NEED TO REMOVE COMMENT!/ still isn't removed for testing */
       &_navigation
          li
             a
@@ -170,7 +208,7 @@
 
 
 
-// Small devices (landscape phones, less than 768px)
+//* Small devices (landscape phones, less than 768px)
 @media (min-width: 576px) and (max-width: 767.98px)
 
    .intro
@@ -183,11 +221,11 @@
 
 
    
-// Extra small devices (portrait phones, less than 576px)
+//* Extra small devices (portrait phones, less than 576px)
 @media (min-width: 320px) and (max-width: 575.98px)
 
    .menu
-      // padding: 74.01px 0px 10px 62px
+      //* padding: 74.01px 0px 10px 62px */
       height: 74.01px
       &_logo
          top: 0px
@@ -204,8 +242,8 @@
    .intro
       width: 320px
       height: 169px
-      // width: 987px
-      // height: 520px
+      //* width: 987px */
+      //* height: 520px */
    footer
       .container
          background-color: #888888

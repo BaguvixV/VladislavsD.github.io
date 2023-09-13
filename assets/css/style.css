@@ -370,8 +370,46 @@ footer {
     .mobile-menu_logo_img {
       width: 128px;
       height: 81px; }
-    .mobile-menu #myLinks {
-      display: none; }
+    .mobile-menu #mobile-menu_toggle {
+      display: block;
+      position: relative;
+      width: 32px;
+      height: 32px;
+      top: 35px;
+      left: 97%;
+      z-index: 1;
+      -webkit-user-select: none;
+      -moz-user-select: none;
+       -ms-user-select: none;
+           user-select: none; }
+      .mobile-menu #mobile-menu_toggle input {
+        display: block;
+        width: 33px;
+        height: 33px;
+        position: absolute;
+        top: -5px;
+        left: 0px;
+        cursor: pointer;
+        opacity: 0.5;
+        z-index: 2;
+        -webkit-touch-callout: none; }
+      .mobile-menu #mobile-menu_toggle span {
+        display: block;
+        width: 33px;
+        height: 4px;
+        margin-bottom: 5px;
+        position: relative;
+        background: #9e1212;
+        border-radius: 3px;
+        z-index: 1;
+        -webkit-transform-origin: 4px 0px;
+                transform-origin: 4px 0px;
+        -webkit-transition: background 0.5s cubic-bezier(0.77, 0.2, 0.05, 1), opacity 0.55s ease, -webkit-transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1);
+        transition: background 0.5s cubic-bezier(0.77, 0.2, 0.05, 1), opacity 0.55s ease, -webkit-transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1);
+        transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1), background 0.5s cubic-bezier(0.77, 0.2, 0.05, 1), opacity 0.55s ease;
+        transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1), background 0.5s cubic-bezier(0.77, 0.2, 0.05, 1), opacity 0.55s ease, -webkit-transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1); }
+      .mobile-menu #mobile-menu_toggle #mobile-menu_bar {
+        display: none; }
     .mobile-menu_navigation li a {
       text-align: center;
       font-size: 24px; }

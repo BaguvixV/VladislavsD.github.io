@@ -12,13 +12,11 @@
 
    <title>Qualification Test</title>
    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
-   <link rel="stylesheet" href="assets/js/theme.js">
    
    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap-reboot.min.css">
    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap-grid.min.css">
 </head>
 <body>
-   <script src="assets/js/theme.js"></script>
    <header class="menu mobile-menu">
       <nav>
          <div class="menu_logo mobile-menu_logo">
@@ -27,22 +25,32 @@
                <img src="assets/img/logo.png" alt="logo_img.png" class="menu_logo_img mobile-menu_logo_img">
             </a>
          </div>
-         <ul class="menu_navigation mobile-menu_navigation" id="myLinks">
-            <li><a href="#ideja">Ideja</a></li>
-            <li><a href="#piesaki-sapni">Piesaki Sapni</a></li>
-            <li><a href="#uznemejiem">Uzņēmējiem</a></li>
-            <li><a href="#sapnu-banka">Sapņu banka</a></li>
-            <li><a href="#sapnu-atbalsts">Sapņus atbalsta</a></li>
-            <li><a href="#iedvesmas-stasti">99 Iedvesmas stāsti</a></li>
-            <li><a href="#">LV</a></li>
-         </ul>
-         
-         <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-         </a>
+         <div id="mobile-menu_toggle">
+            <div class="mobile-menu_hamburger">
+               <!--
+                  A fake / hidden checkbox is used as click reciever,
+                  so you can use the :checked selector on it.
+               -->
+               <input type="checkbox"/> <!-- "/>" ??? -->
+   
+               <!--
+                  Some spans to act as a hamburger.
+               -->
+               <span></span>
+               <span></span>
+               <span></span>
+            </div>
 
-         <!-- <div class="menu_bar"> -->
-            <!-- Visible only tablets and mobile phones -->
-         <!-- </div> -->
+            <ul class="menu_navigation mobile-menu_navigation" id="mobile-menu_bar">
+               <li><a href="#ideja">Ideja</a></li>
+               <li><a href="#piesaki-sapni">Piesaki Sapni</a></li>
+               <li><a href="#uznemejiem">Uzņēmējiem</a></li>
+               <li><a href="#sapnu-banka">Sapņu banka</a></li>
+               <li><a href="#sapnu-atbalsts">Sapņus atbalsta</a></li>
+               <li><a href="#iedvesmas-stasti">99 Iedvesmas stāsti</a></li>
+               <li><a href="#">LV</a></li>
+            </ul>
+         </div>
 
       </nav>
    </header>
