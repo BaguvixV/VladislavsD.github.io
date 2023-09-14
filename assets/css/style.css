@@ -1,15 +1,19 @@
 /* 'HEADER' SECTION */
-.menu {
+.menu_mobile {
+  display: none; }
+.menu_tablet {
+  display: none; }
+.menu_desktop {
   position: relative;
   padding: 0px 62px;
   background-color: #FFFFFF; }
-  .menu_logo {
+  .menu_desktop_logo {
     position: absolute;
     z-index: 1; }
-    .menu_logo_img {
+    .menu_desktop_logo_img {
       width: 159px;
       height: 96px; }
-  .menu_navigation {
+  .menu_desktop_navigation {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -18,18 +22,18 @@
             justify-content: space-between;
     text-align: center;
     margin-left: 182px; }
-    .menu_navigation li {
+    .menu_desktop_navigation li {
       list-style-type: none;
       padding: 51px 0px 20px 22px; }
-      .menu_navigation li:last-child {
+      .menu_desktop_navigation li:last-child {
         padding-left: 51px; }
-    .menu_navigation a {
+    .menu_desktop_navigation a {
       font-family: "Montserrat", sans-serif;
       text-decoration: none;
       font-weight: 500;
       font-size: 18px;
       color: #000000; }
-  .menu::after {
+  .menu_desktop::after {
     background: url("../img/header2.png") bottom no-repeat;
     content: "";
     position: absolute;
@@ -343,7 +347,11 @@ footer {
           padding-left: 29px; }
 
 @media (min-width: 1200px) and (max-width: 1279px) {
-  .menu_navigation li a {
+  .menu_mobile {
+    display: none; }
+  .menu_tablet {
+    display: none; }
+  .menu_desktop_navigation li a {
     font-size: 16px; }
 
   footer .container {
@@ -352,48 +360,74 @@ footer {
   html, body {
     overflow-x: hidden; }
 
-  .menu_navigation {
+  .menu_mobile {
+    display: none; }
+  .menu_tablet {
+    display: none; }
+  .menu_desktop_navigation {
     margin-left: 175px; }
-    .menu_navigation li {
+    .menu_desktop_navigation li {
       padding-left: 14px; }
-      .menu_navigation li:last-child {
+      .menu_desktop_navigation li:last-child {
         padding-left: 23px; }
-      .menu_navigation li a {
+      .menu_desktop_navigation li a {
         font-size: 13px; }
 
   footer .container {
     background-color: #646464; } }
 @media (min-width: 768px) and (max-width: 991.98px) {
-  .mobile-menu {
+  .menu_desktop {
+    display: none; }
+  .menu_mobile {
+    display: none; }
+  .menu_tablet {
+    display: block;
     height: 74.01px;
-    background-color: #a8946f; }
-    .mobile-menu_logo_img {
+    background-color: #a8946f;
+    position: relative;
+    padding: 0px 62px; }
+    .menu_tablet_logo {
       width: 128px;
       height: 81px; }
-    .mobile-menu #mobile-menu_toggle {
+      .menu_tablet_logo a {
+        display: block;
+        width: 128px;
+        height: 81px; }
+        .menu_tablet_logo a img {
+          width: 128px;
+          height: 81px; }
+    .menu_tablet_toggle {
       display: block;
       position: relative;
       width: 32px;
       height: 32px;
-      top: 35px;
-      left: 97%;
+      top: 0px;
+      left: 91.7%;
       z-index: 1;
       -webkit-user-select: none;
       -moz-user-select: none;
        -ms-user-select: none;
            user-select: none; }
-      .mobile-menu #mobile-menu_toggle input {
+      .menu_tablet_toggle input {
         display: block;
         width: 33px;
         height: 33px;
         position: absolute;
         top: -5px;
-        left: 0px;
+        right: 0px;
         cursor: pointer;
         opacity: 0.5;
         z-index: 2;
         -webkit-touch-callout: none; }
-      .mobile-menu #mobile-menu_toggle span {
+        .menu_tablet_toggle input::checked ~ span {
+          opacity: 1;
+          -webkit-transform: rotate(45deg) translate(-2px, -1px);
+                  transform: rotate(45deg) translate(-2px, -1px);
+          background: #232323; }
+        .menu_tablet_toggle input::checked ~ ul {
+          -webkit-transform: none;
+                  transform: none; }
+      .menu_tablet_toggle span {
         display: block;
         width: 33px;
         height: 4px;
@@ -408,14 +442,14 @@ footer {
         transition: background 0.5s cubic-bezier(0.77, 0.2, 0.05, 1), opacity 0.55s ease, -webkit-transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1);
         transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1), background 0.5s cubic-bezier(0.77, 0.2, 0.05, 1), opacity 0.55s ease;
         transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1), background 0.5s cubic-bezier(0.77, 0.2, 0.05, 1), opacity 0.55s ease, -webkit-transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1); }
-      .mobile-menu #mobile-menu_toggle #mobile-menu_bar {
-        display: none; }
-    .mobile-menu_navigation li a {
-      text-align: center;
-      font-size: 24px; }
-    .mobile-menu::after {
-      background-image: url("../img/tablet/header_after.png");
-      top: 68.06px; }
+        .menu_tablet_toggle span::first-child {
+          -webkit-transform-origin: 0% 0%;
+                  transform-origin: 0% 0%; }
+        .menu_tablet_toggle span::last-child(2) {
+          -webkit-transform-origin: 0% 100%;
+                  transform-origin: 0% 100%; }
+  .menu::after {
+    top: 63px; }
 
   .intro {
     bottom: -5.3px;
@@ -510,6 +544,13 @@ footer {
       footer .container .row .footer_column .img_container img:nth-child(2) {
         height: 25px; } }
 @media (min-width: 576px) and (max-width: 767.98px) {
+  .menu_desktop {
+    display: none; }
+  .menu_tablet {
+    display: none; }
+  .menu_mobile {
+    display: block; }
+
   .intro {
     width: 768px;
     height: 406px; }
@@ -517,22 +558,21 @@ footer {
   footer .container {
     background-color: #888888; } }
 @media (min-width: 320px) and (max-width: 575.98px) {
-  .menu {
+  .menu_mobile {
     height: 74.01px; }
-    .menu_logo {
+    .menu_mobile_logo {
       top: 0px; }
-      .menu_logo_img {
+      .menu_mobile_logo_img {
         width: 128px;
         height: 81px; }
-    .menu_navigation {
+    .menu_mobile_navigation {
       display: none; }
-    .menu::after {
+    .menu_mobile::after {
       background-image: url("../img/tablet/header_after.png");
       top: 68.06px; }
-    .menu_bar {
+    .menu_mobile_bar {
       background-image: url("../icon/menu.png"); }
-
-  .intro {
+  .menu .intro {
     width: 320px;
     height: 169px; }
 

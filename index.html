@@ -17,31 +17,26 @@
    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap-grid.min.css">
 </head>
 <body>
-   <header class="menu mobile-menu">
-      <nav>
-         <div class="menu_logo mobile-menu_logo">
-            <!-- !!! NOTE | To Do: Add image in CSS instead of HTML -->
+   <header class="menu">
+
+
+      <!-- <nav>
+         <div class="desktop-menu_logo mobile-menu_logo">
             <a href="#home" class="active">
-               <img src="assets/img/logo.png" alt="logo_img.png" class="menu_logo_img mobile-menu_logo_img">
+               <img src="assets/img/logo.png" alt="logo_img.png" class="desktop-menu_logo_img mobile-menu_logo_img">
             </a>
          </div>
-         <div id="mobile-menu_toggle">
-            <div class="mobile-menu_hamburger">
-               <!--
-                  A fake / hidden checkbox is used as click reciever,
-                  so you can use the :checked selector on it.
-               -->
-               <input type="checkbox"/> <!-- "/>" ??? -->
-   
-               <!--
-                  Some spans to act as a hamburger.
-               -->
+         <div class="mobile-menu_toggle">
+            <div class="mobile-menu_toggle_hamburger">
+
+               <input type="checkbox"/>
+
                <span></span>
                <span></span>
                <span></span>
             </div>
 
-            <ul class="menu_navigation mobile-menu_navigation" id="mobile-menu_bar">
+            <ul class="desktop-menu_navigation mobile-menu_navigation">
                <li><a href="#ideja">Ideja</a></li>
                <li><a href="#piesaki-sapni">Piesaki Sapni</a></li>
                <li><a href="#uznemejiem">Uzņēmējiem</a></li>
@@ -51,8 +46,64 @@
                <li><a href="#">LV</a></li>
             </ul>
          </div>
+      </nav> -->
 
+
+      <nav class="menu_desktop">
+         <div class="menu_desktop_logo">
+            <!--  
+               To Do: Add image [img scr] in CSS instead of HTML
+            -->
+            <img src="assets/img/logo.png" alt="logo_img.png" class="menu_desktop_logo_img">
+         </div>
+
+         <ul class="menu_desktop_navigation">
+            <li><a href="#">Ideja</a></li>
+            <li><a href="#">Piesaki Sapni</a></li>
+            <li><a href="#">Uzņēmējiem</a></li>
+            <li><a href="#">Sapņu banka</a></li>
+            <li><a href="#">Sapņus atbalsta</a></li>
+            <li><a href="#">99 Iedvesmas stāsti</a></li>
+            <li><a href="#">LV</a></li>
+         </ul>
       </nav>
+
+
+      <nav class="menu_tablet">
+         <div class="menu_tablet_logo">
+            <a href="#home" class="active">
+               <img src="assets/img/logo.png" alt="logo_img.png">
+            </a>
+         </div>
+         <div class="menu_tablet_toggle">
+            <!--
+               A fake / hidden checkbox is used as click reciever,
+               so you can use the :checked selector on it.
+            -->
+            <input type="checkbox"/>
+
+            <!--
+               Some spans to act as a hamburger.
+            -->
+            <span></span>
+            <span></span>
+            <span></span>
+
+            <ul class="menu_tablet_toggle_navigation">
+               <li><a href="#ideja">Ideja</a></li>
+               <li><a href="#piesaki-sapni">Piesaki Sapni</a></li>
+               <li><a href="#uznemejiem">Uzņēmējiem</a></li>
+               <li><a href="#sapnu-banka">Sapņu banka</a></li>
+               <li><a href="#sapnu-atbalsts">Sapņus atbalsta</a></li>
+               <li><a href="#iedvesmas-stasti">99 Iedvesmas stāsti</a></li>
+               <li><a href="#">LV</a></li>
+            </ul>
+         </div>
+      </nav>
+
+
+      <!-- <nav class="mobile-menu"></nav> -->
+
    </header>
 
    <section class="intro">
