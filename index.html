@@ -69,23 +69,16 @@
       </nav>
 
 
-      <nav class="menu_tablet">
+      <section class="menu_tablet">
          <div class="menu_tablet_logo">
             <a href="#home" class="active">
                <img src="assets/img/logo.png" alt="logo_img.png">
             </a>
          </div>
-         <div class="menu_tablet_toggle"> 
-            <!-- A fake/hidden checkbox is used as click reciever, so you can use the :checked selector on it -->
-            <input type="checkbox"/>
-            <!-- Added some spans to act as a hamburger -->
-            <div class="menu_tablet_toggle_span">
-               <span class="menu_tablet_toggle_span_top"></span>
-               <span class="menu_tablet_toggle_span_middle"></span>
-               <span class="menu_tablet_toggle_span_bottom"></span>
-            </div>
-         </div>
-         <div class="menu_tablet_navigation">
+         <button class="menu_tablet_hamburger is-active"> 
+            <div class="menu_tablet_hamburger_bar"></div>
+         </button>
+         <nav class="menu_tablet_navigation">
             <ul>
                <li><a href="#ideja">Ideja</a></li>
                <li><a href="#piesaki-sapni">Piesaki Sapni</a></li>
@@ -95,8 +88,8 @@
                <li><a href="#iedvesmas-stasti">99 Iedvesmas stāsti</a></li>
                <li><a href="#">LV</a></li>
             </ul>
-         </div>
-      </nav>
+         </nav>
+      </section>
 
 
       <!-- <nav class="mobile-menu"></nav> -->
@@ -231,6 +224,6 @@
          </div>
       </div>
    </footer>
-
+   <script src="assets/js/theme.js"></script>
 </body>
 </html>
