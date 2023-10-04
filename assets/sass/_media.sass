@@ -15,7 +15,7 @@
                   font-size: 16px
    footer
       .container
-         background-color: #646464
+         // background-color: #646464
 
 
 
@@ -42,7 +42,7 @@
                   font-size: 13px
    footer
       .container
-         background-color: #646464
+         // background-color: #646464
 
 
 
@@ -74,60 +74,97 @@
                   height: 81px
          &_toggle
             display: block //* Lai varētu viņu bīdīt uz visām pusēm */
-            position: relative
-            width: 32px
-            height: 32px
-            top: 0px
-            left: 91.7%
+            position: absolute
+            top: 35px
+            right: 80px
+            width: max-content
+            // height: 32px
             z-index: 1
             -webkit-user-select: none
             user-select: none
+            background-color: red
             //* Styles for the checkbox input element */
+            &::before   //empty for now
+            &::after    //empty for now
             input[type="checkbox"]
+               // -webkit-appearance: none
+               // visibility: hidden
+               // display: none
+               
                display: block
+               position: absolute
                width: 33px
                height: 33px
-               position: absolute
-               top: -5px
+               // top: -5px
                // right: 0px
 
                cursor: pointer
 
                // opacity: 0 //* hide this */
-               opacity: 0.5
+               opacity: 0.3
                z-index: 2 //* and place it over the hamburger */
 
                -webkit-touch-callout: none
 
-               //* Styles for the checkbox when it's checked */
-               &:checked
-                  ~ span
-                     &:nth-child(1) //* is it works ? */
-                        opacity: 1
-                        transform: rotate(45deg) translate(-2px, -1px)
-                        background: #232323
-                     &:nth-child(2) //* is it works ? */
-                        display: none
-                     &:nth-child(3) //* is it works ? */
-                        opacity: 1
-                        transform: rotate(-45deg) translate(-2px, -1px)
-                        background: #232323
-            span
-               display: block
-               width: 33px
-               height: 4px
-               margin-bottom: 5px
+               input[type="checkbox"]:checked ~ .top
+                  transform: rotate(-45deg) translate(-2px, -1px)
+                  background: #232323
+            //    &_1 //* is it works ? */
+            //       opacity: 1
+            //       transform: rotate(45deg) translate(-2px, -1px)
+            //       background: #232323
+            //    &_2 //* is it works ? */
+            //       display: none !important
+            //    &_3 //* is it works ? */
+            //       opacity: 1
+            //       transform: rotate(-45deg) translate(-2px, -1px)
+            //       background: #232323
+            &_span
+               // span
+               //    display: block
+               //    width: 33px
+               //    height: 4px
+               //    margin-bottom: 5px
+               //    position: relative
+               //    background: #000
+               //    border-radius: 3px
+               //    // z-index: 3
+               //    z-index: 1
+               //    transform-origin: 4px 0px
+               //    transition: transform 0.5s ease, opacity 0.5s ease, background 0.5s ease
+               //    &:first-child
+               //       transform-origin: 100% 0%
+               //    &:last-child(2)
+               //       transform-origin: 0% 100%
+               display: flex
                position: relative
-               background: #000
-               border-radius: 3px
-               // z-index: 3
-               z-index: 1
-               transform-origin: 4px 0px
-               transition: transform 0.5s ease, opacity 0.5s ease, background 0.5s ease
-               &:first-child
-                  transform-origin: 100% 0%
-               &:last-child(2)
-                  transform-origin: 0% 100%
+               justify-content: center
+               cursor: pointer
+               &_top
+                  width: 33px
+                  height: 4px
+                  background: $black
+                  border-radius: 50px
+                  position: absolute
+                  transition: 0.3 ease
+                  
+               &_middle
+                  bottom: 14px
+                  width: 33px
+                  height: 4px
+                  background: $black
+                  border-radius: 50px
+                  position: absolute
+                  transition: 0.3 ease
+               &_bottom
+                  top: 20px
+                  width: 33px
+                  height: 4px
+                  background: $black
+                  border-radius: 50px
+                  position: absolute
+                  transition: 0.3 ease
+
          &_navigation
             position: relative
             display: block
@@ -289,7 +326,7 @@
       height: 406px
    footer
       .container
-         background-color: #888888
+         // background-color: #888888
 
 
 
@@ -320,4 +357,4 @@
          //* height: 520px */
    footer
       .container
-         background-color: #888888
+         // background-color: #888888

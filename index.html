@@ -11,10 +11,10 @@
    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&family=Oswald:wght@500&display=swap" rel="stylesheet">
 
    <title>Qualification Test</title>
-   <link rel="stylesheet" type="text/css" href="assets/css/style.css">
-   
    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap-reboot.min.css">
    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap-grid.min.css">
+   <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+
 </head>
 <body>
    <header class="menu">
@@ -79,9 +79,11 @@
             <!-- A fake/hidden checkbox is used as click reciever, so you can use the :checked selector on it -->
             <input type="checkbox"/>
             <!-- Added some spans to act as a hamburger -->
-            <span></span>
-            <span></span>
-            <span></span>
+            <div class="menu_tablet_toggle_span">
+               <span class="menu_tablet_toggle_span_top"></span>
+               <span class="menu_tablet_toggle_span_middle"></span>
+               <span class="menu_tablet_toggle_span_bottom"></span>
+            </div>
          </div>
          <div class="menu_tablet_navigation">
             <ul>

@@ -352,10 +352,7 @@ footer {
   .menu_tablet {
     display: none; }
   .menu_desktop_navigation li a {
-    font-size: 16px; }
-
-  footer .container {
-    background-color: #646464; } }
+    font-size: 16px; } }
 @media (min-width: 992px) and (max-width: 1199.98px) {
   html, body {
     overflow-x: hidden; }
@@ -371,10 +368,7 @@ footer {
       .menu_desktop_navigation li:last-child {
         padding-left: 23px; }
       .menu_desktop_navigation li a {
-        font-size: 13px; }
-
-  footer .container {
-    background-color: #646464; } }
+        font-size: 13px; } }
 @media (min-width: 768px) and (max-width: 991.98px) {
   .menu_desktop {
     display: none; }
@@ -399,59 +393,66 @@ footer {
           height: 81px; }
     .menu_tablet_toggle {
       display: block;
-      position: relative;
-      width: 32px;
-      height: 32px;
-      top: 0px;
-      left: 91.7%;
+      position: absolute;
+      top: 35px;
+      right: 80px;
+      width: -webkit-max-content;
+      width: -moz-max-content;
+      width: max-content;
       z-index: 1;
       -webkit-user-select: none;
       -moz-user-select: none;
        -ms-user-select: none;
-           user-select: none; }
+           user-select: none;
+      background-color: red; }
       .menu_tablet_toggle input[type="checkbox"] {
         display: block;
+        position: absolute;
         width: 33px;
         height: 33px;
-        position: absolute;
-        top: -5px;
         cursor: pointer;
-        opacity: 0.5;
+        opacity: 0.3;
         z-index: 2;
         -webkit-touch-callout: none; }
-        .menu_tablet_toggle input[type="checkbox"]:checked ~ span:nth-child(1) {
-          opacity: 1;
-          -webkit-transform: rotate(45deg) translate(-2px, -1px);
-                  transform: rotate(45deg) translate(-2px, -1px);
-          background: #232323; }
-        .menu_tablet_toggle input[type="checkbox"]:checked ~ span:nth-child(2) {
-          display: none; }
-        .menu_tablet_toggle input[type="checkbox"]:checked ~ span:nth-child(3) {
-          opacity: 1;
+        .menu_tablet_toggle input[type="checkbox"] input[type="checkbox"]:checked ~ .top {
           -webkit-transform: rotate(-45deg) translate(-2px, -1px);
                   transform: rotate(-45deg) translate(-2px, -1px);
           background: #232323; }
-      .menu_tablet_toggle span {
-        display: block;
-        width: 33px;
-        height: 4px;
-        margin-bottom: 5px;
+      .menu_tablet_toggle_span {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
         position: relative;
-        background: #000;
-        border-radius: 3px;
-        z-index: 1;
-        -webkit-transform-origin: 4px 0px;
-                transform-origin: 4px 0px;
-        -webkit-transition: opacity 0.5s ease, background 0.5s ease, -webkit-transform 0.5s ease;
-        transition: opacity 0.5s ease, background 0.5s ease, -webkit-transform 0.5s ease;
-        transition: transform 0.5s ease, opacity 0.5s ease, background 0.5s ease;
-        transition: transform 0.5s ease, opacity 0.5s ease, background 0.5s ease, -webkit-transform 0.5s ease; }
-        .menu_tablet_toggle span:first-child {
-          -webkit-transform-origin: 100% 0%;
-                  transform-origin: 100% 0%; }
-        .menu_tablet_toggle span:last-child(2) {
-          -webkit-transform-origin: 0% 100%;
-                  transform-origin: 0% 100%; }
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;
+        cursor: pointer; }
+        .menu_tablet_toggle_span_top {
+          width: 33px;
+          height: 4px;
+          background: #000000;
+          border-radius: 50px;
+          position: absolute;
+          -webkit-transition: 0.3 ease;
+          transition: 0.3 ease; }
+        .menu_tablet_toggle_span_middle {
+          bottom: 14px;
+          width: 33px;
+          height: 4px;
+          background: #000000;
+          border-radius: 50px;
+          position: absolute;
+          -webkit-transition: 0.3 ease;
+          transition: 0.3 ease; }
+        .menu_tablet_toggle_span_bottom {
+          top: 20px;
+          width: 33px;
+          height: 4px;
+          background: #000000;
+          border-radius: 50px;
+          position: absolute;
+          -webkit-transition: 0.3 ease;
+          transition: 0.3 ease; }
     .menu_tablet_navigation {
       position: relative;
       display: block;
@@ -592,10 +593,7 @@ footer {
 
   .intro {
     width: 768px;
-    height: 406px; }
-
-  footer .container {
-    background-color: #888888; } }
+    height: 406px; } }
 @media (min-width: 320px) and (max-width: 575.98px) {
   .menu_mobile {
     height: 74.01px; }
@@ -613,9 +611,6 @@ footer {
       background-image: url("../icon/menu.png"); }
   .menu .intro {
     width: 320px;
-    height: 169px; }
-
-  footer .container {
-    background-color: #888888; } }
+    height: 169px; } }
 
 /*# sourceMappingURL=style.css.map */
