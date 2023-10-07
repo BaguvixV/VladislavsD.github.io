@@ -435,6 +435,7 @@ footer {
     .menu_tablet_navigation {
       display: block;
       position: fixed;
+      overflow-x: hidden;
       top: 0px;
       left: 100%;
       padding-top: 150px;
@@ -461,8 +462,6 @@ footer {
             -webkit-text-decoration-color: orange;
                     text-decoration-color: orange;
             text-decoration-thickness: 2px; }
-      .menu_tablet_navigation .show-menu {
-        top: 0px; }
 
   .intro {
     bottom: -5.3px;
