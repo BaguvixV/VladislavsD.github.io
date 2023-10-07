@@ -1,7 +1,9 @@
-//* Creating effect when clicking on hamburger [menu] button */
-const body = document.querySelector("body"); 
+//* Select required elements from the DOM */
 const menu_btn = document.querySelector('.menu_tablet_hamburger');
 const menu_modal = document.querySelector('.menu_tablet_navigation');
+
+const body = document.querySelector("body");
+
 
 menu_btn.addEventListener('click', function () {
    //* Activates class is-active over menu_tablet_hamburger and sets CSS parametrs to look like "X" to close menu */
@@ -11,23 +13,23 @@ menu_btn.addEventListener('click', function () {
 });
 
 
-//* (UNFINISHED) Alternative way [down below]: */
+//* (UNFINISHED) Alternative [2.] way [down below]: */
 
-// const showModal = function (e) {
-   //    menu_modal.classList.toggle("hidden");
-   
-   //    if (!menu_modal.classList.contains("hidden")) {
-//          // Disable scroll
-//          body.style.overflow = "hidden";
-//    } else {
-//          // Enable scroll 
-//          body.style.overflow = "auto"; 
-//    }
-// };
+//* Set code for disable scroll bar neavigation bar is opened */
+const showModal = function (e) {
+   menu_modal.classList.toggle("hidden");
+
+   if (!menu_modal.classList.contains("hidden")) {
+         // Disable scroll
+         body.style.overflow = "hidden";
+   } else {
+         // Enable scroll
+         body.style.overflow = "auto";
+   }
+};
 
 
-
-//* (UNFINISHED) Alternative way [down below]: */
+//* (UNFINISHED) Alternative [2.] way [down below]: */
 
 // const showDialog = () => {
 //    document.getElementsByClassName('menu_tablet_navigation').classList.add('is-active')
