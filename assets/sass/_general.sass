@@ -1,41 +1,48 @@
 /* 'HEADER' SECTION */
 
+// .mobile-menu
+//    &_hamburger
+//       display: none
 .menu
-   position: relative
-   padding: 0px 62px
-   background-color: $white
-   &_logo
-      position: absolute
-      z-index: 1
-      &_img
-         width: 159px
-         height: 96px
-   &_navigation
-      // position: relative
-      display: flex
-      justify-content: space-between
-      text-align: center
-      margin-left: 182px
-      li
-         list-style-type: none
-         padding: 51px 0px 20px 22px
-         &:last-child // Makes different changes on last li element
-            padding-left: 51px
-
-      a
-         font-family: 'Montserrat', sans-serif
-         text-decoration: none
-         font-weight: 500
-         font-size: 18px
-         color: $black
-   &::after
-      background: url("../img/header2.png") bottom no-repeat
-      content: ""
-      position: absolute
-      top: 85.07px
-      left: 0
-      width: 100%
-      height: 34.93px
+   &_mobile
+      display: none
+   &_tablet
+      display: none
+   &_desktop
+      position: relative
+      padding: 0px 62px
+      background-color: $white
+      &_logo
+         position: absolute
+         z-index: 1
+         &_img
+            width: 159px
+            height: 96px
+      &_navigation
+         // position: relative
+         display: flex
+         justify-content: space-between
+         text-align: center
+         margin-left: 182px
+         li
+            list-style-type: none
+            padding: 51px 0px 20px 22px
+            &:last-child // Makes different changes on last li element
+               padding-left: 51px
+         a
+            font-family: 'Montserrat', sans-serif
+            text-decoration: none
+            font-weight: 500
+            font-size: 18px
+            color: $black
+      &::after
+         background: url("../img/header2.png") bottom no-repeat
+         content: ""
+         position: absolute
+         top: 85.07px
+         left: 0
+         width: 100%
+         height: 34.93px
 
 
 
@@ -70,13 +77,14 @@
    margin: 0px auto
    padding: 150px 0px 169px 0px
    width: 654px
-   p
-      width: 654px
-      height: 114px
-      font-family: 'Montserrat', sans-serif
-      font-size: 18px
-      text-align: center
-      color: $blue
+   .text-container
+      p
+         width: 654px
+         height: 114px
+         font-family: 'Montserrat', sans-serif
+         font-size: 18px
+         text-align: center
+         color: $blue
 
 
 
@@ -151,10 +159,12 @@
       justify-content: space-around
       &_1
          h2
-            font-family: "Oswald"
-            font-weight: 500
-            font-size: 24px
+            color: #2F4858
             text-align: center
+            font-family: "Oswald"
+            text-transform: uppercase
+            font-size: 24px
+            font-weight: 500
          button
             display: block
             margin: 0px auto
@@ -171,10 +181,12 @@
                cursor: pointer
       &_2
          h2
-            font-family: "Oswald"
-            font-weight: 500
-            font-size: 24px
+            color: #2F4858
             text-align: center
+            font-family: "Oswald"
+            text-transform: uppercase
+            font-size: 24px
+            font-weight: 500
          button
             display: block
             margin: 0px auto
@@ -314,8 +326,9 @@ footer
          color: $white
       p
          font-size: 14px
-         color: $white
          line-height: 18px
+         font-family: 'Montserrat'
+         color: $white
       &_p1
          margin-top: 70px
       &_p2
