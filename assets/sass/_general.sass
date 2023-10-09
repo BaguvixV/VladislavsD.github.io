@@ -74,16 +74,18 @@
 
 .about
    display: block
-   margin: 0px auto
-   padding: 150px 0px 169px 0px
-   width: 654px
+   margin: 150px auto 169px auto
+   //* Edited from width to max-width to remove white space on mobile size (saw when tested responsivity) */
+   max-width: 654px
    .text-container
+      //* Set padding:right and padding:left to 18.5px each */
+      padding: 0px 18.5px 0px 18.5px
       p
-         width: 654px
-         height: 114px
-         font-family: 'Montserrat', sans-serif
-         font-size: 18px
+         max-width: 654px
+         max-height: 114px
          text-align: center
+         font-size: 18px
+         font-family: 'Montserrat', sans-serif
          color: $blue
 
 
@@ -155,7 +157,8 @@
    &_container
       display: flex
       margin: 0px auto
-      width: 987px
+      //* Edited from width to max-width to remove white space on mobile size (saw when tested responsivity) */
+      max-width: 987px
       justify-content: space-around
       &_1
          h2

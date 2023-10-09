@@ -294,22 +294,22 @@
             top: 0px
             left: 28px
             z-index: 4
-            width: 78px
-            height: 42px
+            width: 90px
+            height: 55px
             a
                display: block
-               width: 78px
-               height: 42px
+               width: 90px
+               height: 55px
                img
-                  width: 78px
-                  height: 42px
+                  width: 90px
+                  height: 55px
          &_hamburger
             display: block 
             //* Lai elementu varētu viņu bīdīt uz visām pusēm */
             position: absolute 
-            top: 18px
-            right: 28px
-            width: 35px
+            top: 17px
+            right: 13px
+            width: 26px
             cursor: pointer
             appearance: none
             background: none
@@ -326,17 +326,17 @@
                content: ''
                display: block
                width: 100%
-               height: 5px
-               margin: 6px 0px
+               height: 2px
+               margin: 3px 0px
                border-radius: 3px
                transition: 0.4s
                background-color: $black
             //* Create button visual when it's clicked */
             &.is-active
                &:before
-                  transform: rotate(-45deg) translate(-8px, 6px)
+                  transform: rotate(-45deg) translate(-3px, 3px)
                &:after
-                  transform: rotate(45deg) translate(-9px, -8px)       
+                  transform: rotate(45deg) translate(-4px, -4px)       
                .menu_tablet_hamburger_bar
                   opacity: 0
          &_navigation
@@ -373,17 +373,26 @@
                         text-decoration-thickness: 2px
 
    .intro
-      bottom: 24.3px
+      bottom: 16.3px
       max-width: 575.98px
       height: 169px
+      &_video
+         &_btn
+            top: 62px
+            width: 50px
+            height: 48.256px
 
    .about
-      // width: 100%
+      margin: 80px 0px 80px 0px
       max-width: 575.98px
-      .text-container
-         max-width: 575.98px
-         p
-            width: 280px
+      .container
+         .text-container
+            p
+               display: block
+               margin: 0px auto
+               max-width: 570px
+               max-height: 159px
+               font-size: 12px
          
    //* 'GALLERY' SECTION 
    .gallery
@@ -414,7 +423,10 @@
       &_container
          display: block
          max-width: 575.98px
-         padding-left: 0px
+         
+         //* To remove padding-left:15px in bootstrap.css on this element*/
+         margin-right: -15px
+         margin-left: -15px
          &_1
             h2
                font-size: 18px

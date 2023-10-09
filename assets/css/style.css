@@ -64,16 +64,17 @@
 
 .about {
   display: block;
-  margin: 0px auto;
-  padding: 150px 0px 169px 0px;
-  width: 654px; }
-  .about .text-container p {
-    width: 654px;
-    height: 114px;
-    font-family: "Montserrat", sans-serif;
-    font-size: 18px;
-    text-align: center;
-    color: #2F4858; }
+  margin: 150px auto 169px auto;
+  max-width: 654px; }
+  .about .text-container {
+    padding: 0px 18.5px 0px 18.5px; }
+    .about .text-container p {
+      max-width: 654px;
+      max-height: 114px;
+      text-align: center;
+      font-size: 18px;
+      font-family: "Montserrat", sans-serif;
+      color: #2F4858; }
 
 .item1 {
   grid-area: image1; }
@@ -134,7 +135,7 @@
     display: -ms-flexbox;
     display: flex;
     margin: 0px auto;
-    width: 987px;
+    max-width: 987px;
     -ms-flex-pack: distribute;
         justify-content: space-around; }
     .agree_container_1 h2 {
@@ -578,21 +579,21 @@ footer {
       top: 0px;
       left: 28px;
       z-index: 4;
-      width: 78px;
-      height: 42px; }
+      width: 90px;
+      height: 55px; }
       .menu_mobile_logo a {
         display: block;
-        width: 78px;
-        height: 42px; }
+        width: 90px;
+        height: 55px; }
         .menu_mobile_logo a img {
-          width: 78px;
-          height: 42px; }
+          width: 90px;
+          height: 55px; }
     .menu_mobile_hamburger {
       display: block;
       position: absolute;
-      top: 18px;
-      right: 28px;
-      width: 35px;
+      top: 17px;
+      right: 13px;
+      width: 26px;
       cursor: pointer;
       -webkit-appearance: none;
          -moz-appearance: none;
@@ -606,18 +607,18 @@ footer {
         content: "";
         display: block;
         width: 100%;
-        height: 5px;
-        margin: 6px 0px;
+        height: 2px;
+        margin: 3px 0px;
         border-radius: 3px;
         -webkit-transition: 0.4s;
         transition: 0.4s;
         background-color: #000000; }
       .menu_mobile_hamburger.is-active:before {
-        -webkit-transform: rotate(-45deg) translate(-8px, 6px);
-                transform: rotate(-45deg) translate(-8px, 6px); }
+        -webkit-transform: rotate(-45deg) translate(-3px, 3px);
+                transform: rotate(-45deg) translate(-3px, 3px); }
       .menu_mobile_hamburger.is-active:after {
-        -webkit-transform: rotate(45deg) translate(-9px, -8px);
-                transform: rotate(45deg) translate(-9px, -8px); }
+        -webkit-transform: rotate(45deg) translate(-4px, -4px);
+                transform: rotate(45deg) translate(-4px, -4px); }
       .menu_mobile_hamburger.is-active .menu_tablet_hamburger_bar {
         opacity: 0; }
     .menu_mobile_navigation {
@@ -652,16 +653,23 @@ footer {
             text-decoration-thickness: 2px; }
 
   .intro {
-    bottom: 24.3px;
+    bottom: 16.3px;
     max-width: 575.98px;
     height: 169px; }
+    .intro_video_btn {
+      top: 62px;
+      width: 50px;
+      height: 48.256px; }
 
   .about {
+    margin: 80px 0px 80px 0px;
     max-width: 575.98px; }
-    .about .text-container {
-      max-width: 575.98px; }
-      .about .text-container p {
-        width: 280px; }
+    .about .container .text-container p {
+      display: block;
+      margin: 0px auto;
+      max-width: 570px;
+      max-height: 159px;
+      font-size: 12px; }
 
   .gallery {
     max-width: 575.98px;
@@ -686,7 +694,8 @@ footer {
     .agree_container {
       display: block;
       max-width: 575.98px;
-      padding-left: 0px; }
+      margin-right: -15px;
+      margin-left: -15px; }
       .agree_container_1 h2 {
         font-size: 18px;
         width: 233px;
