@@ -378,9 +378,10 @@
       height: 169px
       &_video
          &_btn
-            top: 62px
-            width: 50px
-            height: 48.256px
+            background: url("../../assets/icon/mobile_play.png") center no-repeat
+            top: 51px
+            width: 78px
+            height: 78px
 
    .about
       margin: 80px 0px 80px 0px
@@ -418,10 +419,12 @@
             height: 82px
 
    .agree
+      margin-top: 120px
       max-width: 575.98px
       padding-left: 0px
       &_container
          display: block
+         margin: 0px auto
          max-width: 575.98px
          
          //* To remove padding-left:15px in bootstrap.css on this element*/
@@ -429,63 +432,146 @@
          margin-left: -15px
          &_1
             h2
+               display: block
+               margin: 0px auto
                font-size: 18px
-               width: 233px
-               height: 54px
+               max-width: 233px
+               // height: 54px
+               // max-height: 25px
+            button
+               margin-top: 30px
          &_2
+            margin-top: 80px
             h2
+               display: block
+               margin: 0px auto
                font-size: 18px
-               width: 233px
-               height: 54px
+               max-width: 280px
+               max-height: 54px
+            button
+               margin-top: 30px
 
    .contactf
+      margin: 120px 0px 90px 0px
       max-width: 575.98px
       &_container
+         margin: 0px auto
+         // max-width: 612px
          width: 100%
-         input[type=text], 
+         h3
+            margin-bottom: 55px
+            text-align: center
+            font-family: 'Oswald'
+            font-weight: 500
+            font-size: 30px
+            text-transform: uppercase
+         input[type=text],
          textarea
+            display: block
+            margin: 10px auto
+            padding: 10px
             max-width: 280px
+            height: 43px
+            &::placeholder
+               font-size: 14px
          textarea
             width: 280px
             height: 150px
-         &_p
-            margin-top: 15px
+         &_mobile_center
+            display: block
+            margin: 0px auto
+            max-width: 280px
+         p
+            margin: 0px
+            font-size: 12px
+            color: $blue
          &_check
             margin-top: 10px
+            display: flex
+            align-content: flex-start 
+            &_1
+               margin-right: 21px
+            &_2
+               p
+                  font-size: 12px
+         input[type=submit]
+            border-radius: 35px
+            width: 140px
+            height: 48px
+            font-size: 18px
 
    .sponsors
-      // width: 100%
-      // max-width: 575.98px
-      // width: 320px
-      height: 317.6px
+      //* Remove padding settings from _general.sass  */
+      padding: 0px 
+      //* Set padding for mobile size querie */
+      padding-top: 70.41px
+      height: 430px
       &_title
-         text-transform: uppercase
       &_container
          display: block
-         width: 95%
-         margin-top: 36px
+         position: relative
+         margin: 60px auto 0px auto
+         max-width: 95%
          .img1
+            position: absolute
             width: 130px
             height: 44px
          .img2
+            position: absolute
+            left: 153px
             width: 131px
             height: 51px
          .img3
+            position: absolute
+            top: 84px
             width: 131px
             height: 44px
          .img4 
+            position: absolute
+            top: 70px
+            right: 40px
             width: 48px
             height: 67px
 
    footer
-      height: 483px
-      .container
-         // background-color: #888888
-      .footer_column
-         .footer-col_logo
-            img
-               width: 100px
-               height: 100px
+      height: 440px
+      .row
+         .container
+         .footer_hidden
+            display: none
+         .footer_column
+            &:last-child
+               text-align: left
+               margin-top: 25px
+            .img_container
+               margin-top: 30px
+               .img_1,
+               .img_2
+                  height: 25px
+            .footer-col_logo
+               img
+                  width: 100px
+                  height: 100px
+            &_p1
+               position: absolute
+               top: 369px
+               font-size: 11px
+               //* Removing margin-top:70px */
+               margin: 0px
+            &_p2
+               font-size: 11px
+            h4
+               font-size: 18px
+            ul
+               margin-top: 25px
+               li
+                  font-size: 12px
+            .visible_on_tablet_and_phone
+               position: relative
+               p
+                  margin-top: -10px
+                  font-size: 14px
+                  font-weight: 700
 
 
    
