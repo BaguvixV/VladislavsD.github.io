@@ -129,7 +129,7 @@
       height: 40px; }
 
 .agree {
-  padding: 150px 0px 150px 0px; }
+  margin: 150px 0px 150px 0px; }
   .agree_container {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -657,9 +657,10 @@ footer {
     max-width: 575.98px;
     height: 169px; }
     .intro_video_btn {
-      top: 62px;
-      width: 50px;
-      height: 48.256px; }
+      background: url("../../assets/icon/mobile_play.png") center no-repeat;
+      top: 51px;
+      width: 78px;
+      height: 78px; }
 
   .about {
     margin: 80px 0px 80px 0px;
@@ -693,17 +694,37 @@ footer {
     padding-left: 0px; }
     .agree_container {
       display: block;
+      margin: 0px auto;
       max-width: 575.98px;
       margin-right: -15px;
       margin-left: -15px; }
       .agree_container_1 h2 {
+        display: block;
+        margin: 0px auto;
         font-size: 18px;
         width: 233px;
         height: 54px; }
-      .agree_container_2 h2 {
-        font-size: 18px;
-        width: 233px;
-        height: 54px; }
+      .agree_container_1 button {
+        margin-top: 30px; }
+      .agree_container_2 {
+        margin-top: 80px; }
+        .agree_container_2 h2 {
+          display: block;
+          margin: 0px auto;
+          font-size: 18px;
+          width: 233px;
+          height: 54px; }
+        .agree_container_2 button {
+          margin-top: 30px; }
+
+  .agree {
+    margin: 120px 40px 120px 40px; }
+    .agree_container {
+      max-width: 495px; }
+      .agree_container_1 {
+        text-align: center; }
+      .agree_container_2 {
+        display: block; }
 
   .contactf {
     max-width: 575.98px; }
