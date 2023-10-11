@@ -501,26 +501,35 @@
             font-size: 18px
 
    .sponsors
-      // width: 100%
-      // max-width: 575.98px
-      // width: 320px
-      height: 317.6px
+      //* Remove padding settings from _general.sass  */
+      padding: 0px 
+      //* Set padding for mobile size querie */
+      padding-top: 70.41px
+      height: 430px
       &_title
-         text-transform: uppercase
       &_container
          display: block
-         width: 95%
-         margin-top: 36px
+         position: relative
+         margin: 60px auto 0px auto
+         max-width: 95%
          .img1
+            position: absolute
             width: 130px
             height: 44px
          .img2
+            position: absolute
+            left: 153px
             width: 131px
             height: 51px
          .img3
+            position: absolute
+            top: 84px
             width: 131px
             height: 44px
          .img4 
+            position: absolute
+            top: 70px
+            right: 40px
             width: 48px
             height: 67px
 

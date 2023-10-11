@@ -278,6 +278,7 @@ input[type=submit] {
     font-weight: 500;
     font-size: 24px;
     text-align: center;
+    text-transform: uppercase;
     color: #2F4858; }
   .sponsors_container {
     display: -webkit-box;
@@ -778,23 +779,32 @@ footer {
         font-size: 18px; }
 
   .sponsors {
-    height: 317.6px; }
-    .sponsors_title {
-      text-transform: uppercase; }
+    padding: 0px;
+    padding-top: 70.41px;
+    height: 430px; }
     .sponsors_container {
       display: block;
-      width: 95%;
-      margin-top: 36px; }
+      position: relative;
+      margin: 60px auto 0px auto;
+      max-width: 95%; }
       .sponsors_container .img1 {
+        position: absolute;
         width: 130px;
         height: 44px; }
       .sponsors_container .img2 {
+        position: absolute;
+        left: 153px;
         width: 131px;
         height: 51px; }
       .sponsors_container .img3 {
+        position: absolute;
+        top: 84px;
         width: 131px;
         height: 44px; }
       .sponsors_container .img4 {
+        position: absolute;
+        top: 70px;
+        right: 40px;
         width: 48px;
         height: 67px; }
 
