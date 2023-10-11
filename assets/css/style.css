@@ -809,9 +809,38 @@ footer {
         height: 67px; }
 
   footer {
-    height: 483px; }
-    footer .footer_column .footer-col_logo img {
+    height: 440px; }
+    footer .row .footer_hidden {
+      display: none; }
+    footer .row .footer_column:last-child {
+      text-align: left;
+      margin-top: 25px; }
+    footer .row .footer_column .img_container {
+      margin-top: 30px; }
+      footer .row .footer_column .img_container .img_1,
+      footer .row .footer_column .img_container .img_2 {
+        height: 25px; }
+    footer .row .footer_column .footer-col_logo img {
       width: 100px;
-      height: 100px; } }
+      height: 100px; }
+    footer .row .footer_column_p1 {
+      position: absolute;
+      top: 369px;
+      font-size: 11px;
+      margin: 0px; }
+    footer .row .footer_column_p2 {
+      font-size: 11px; }
+    footer .row .footer_column h4 {
+      font-size: 18px; }
+    footer .row .footer_column ul {
+      margin-top: 25px; }
+      footer .row .footer_column ul li {
+        font-size: 12px; }
+    footer .row .footer_column .visible_on_tablet_and_phone {
+      position: relative; }
+      footer .row .footer_column .visible_on_tablet_and_phone p {
+        margin-top: -10px;
+        font-size: 14px;
+        font-weight: 700; } }
 
 /*# sourceMappingURL=style.css.map */

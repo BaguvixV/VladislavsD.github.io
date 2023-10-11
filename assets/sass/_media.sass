@@ -436,7 +436,7 @@
                margin: 0px auto
                font-size: 18px
                max-width: 233px
-               // // height: 54px
+               // height: 54px
                // max-height: 25px
             button
                margin-top: 30px
@@ -534,14 +534,44 @@
             height: 67px
 
    footer
-      height: 483px
-      .container
-         // background-color: #888888
-      .footer_column
-         .footer-col_logo
-            img
-               width: 100px
-               height: 100px
+      height: 440px
+      .row
+         .container
+         .footer_hidden
+            display: none
+         .footer_column
+            &:last-child
+               text-align: left
+               margin-top: 25px
+            .img_container
+               margin-top: 30px
+               .img_1,
+               .img_2
+                  height: 25px
+            .footer-col_logo
+               img
+                  width: 100px
+                  height: 100px
+            &_p1
+               position: absolute
+               top: 369px
+               font-size: 11px
+               //* Removing margin-top:70px */
+               margin: 0px
+            &_p2
+               font-size: 11px
+            h4
+               font-size: 18px
+            ul
+               margin-top: 25px
+               li
+                  font-size: 12px
+            .visible_on_tablet_and_phone
+               position: relative
+               p
+                  margin-top: -10px
+                  font-size: 14px
+                  font-weight: 700
 
 
    
