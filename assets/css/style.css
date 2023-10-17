@@ -1152,8 +1152,11 @@ footer .footer_column:last-child .img_container img:last-child {
   .sponsors_container {
     display: block;
     position: relative;
-    margin: 60px auto 0px auto;
-    max-width: 95%;
+    margin-top: 60px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 285px;
+    height: 140px;
   }
   .sponsors_container .img1 {
     position: absolute;
@@ -1175,7 +1178,7 @@ footer .footer_column:last-child .img_container img:last-child {
   .sponsors_container .img4 {
     position: absolute;
     top: 70px;
-    right: 40px;
+    left: 188px;
     width: 48px;
     height: 67px;
   }
