@@ -1,8 +1,8 @@
 ### SASS ###
-/assets/sass
-/assets/css/style.css.map
-/assets/css/style.min.css
-/assets/css/style.min.css.map
+assets/sass
+assets/css/style.css
+assets/css/style.css.map
+assets/css/style.min.css.map
 
 ### documentation ###
 *.md
