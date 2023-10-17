@@ -502,6 +502,9 @@ footer .footer_column:last-child .img_container img:last-child {
   .menu_tablet_navigation.is-active {
     left: 0px;
   }
+  .menu_tablet_navigation ul {
+    padding: 0px;
+  }
   .menu_tablet_navigation ul li {
     list-style-type: none;
   }
@@ -985,6 +988,10 @@ footer .footer_column:last-child .img_container img:last-child {
   }
   .menu_mobile_navigation.is-active {
     left: 0px;
+  }
+  .menu_mobile_navigation ul {
+    margin: 0px;
+    padding: 0px;
   }
   .menu_mobile_navigation ul li {
     list-style-type: none;
