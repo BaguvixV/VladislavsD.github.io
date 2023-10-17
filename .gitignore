@@ -1,14 +1,12 @@
-### CSS ###
-*.css
-
 ### SASS ###
-/assets/sass/*
-*.css.map
-*.min.css.map
+/assets/sass
+/assets/css/style.css.map
+/assets/css/style.min.css
+/assets/css/style.min.css.map
+
+### documentation ###
+*.md
 
 ### Visual Studio Code ###
 .settings/
 .vscode/
-
-### documentation ###
-*.md
