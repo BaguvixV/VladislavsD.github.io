@@ -14,38 +14,37 @@
    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap-reboot.min.css">
    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap-grid.min.css">
    <link rel="stylesheet" type="text/css" href="assets/css/style.min.css">
-
 </head>
 <body>
    <header class="menu">
-      <nav class="menu_desktop">
+
+      <!-- Menu section for 'desktop' size -->
+      <section class="menu_desktop">
          <div class="menu_desktop_logo">
-            <!--  
-               To Do: Add image [img scr] in CSS instead of HTML
-            -->
             <img src="assets/img/logo.png" alt="logo_img.png" class="menu_desktop_logo_img">
          </div>
-
-         <ul class="menu_desktop_navigation">
-            <li><a href="#">Ideja</a></li>
-            <li><a href="#">Piesaki Sapni</a></li>
-            <li><a href="#">Uzņēmējiem</a></li>
-            <li><a href="#">Sapņu banka</a></li>
-            <li><a href="#">Sapņus atbalsta</a></li>
-            <li><a href="#">99 Iedvesmas stāsti</a></li>
-            <li><a href="#">LV</a></li>
-         </ul>
-      </nav>
-
-
+         <nav>
+            <ul class="menu_desktop_navigation">
+               <li><a href="#">Ideja</a></li>
+               <li><a href="#">Piesaki Sapni</a></li>
+               <li><a href="#">Uzņēmējiem</a></li>
+               <li><a href="#">Sapņu banka</a></li>
+               <li><a href="#">Sapņus atbalsta</a></li>
+               <li><a href="#">99 Iedvesmas stāsti</a></li>
+               <li><a href="#">LV</a></li>
+            </ul>
+         </nav>
+      </section>
+      
+      <!-- Menu section for 'tablet' & 'mobile' sizes -->
       <section class="menu_tablet menu_mobile">
          <div class="menu_tablet_logo menu_mobile_logo">
             <a href="#home" class="active">
                <img src="assets/img/logo.png" alt="logo_img.png">
             </a>
          </div>
-         <!--Button to toggle modal-->
-         <button class="menu_tablet_hamburger menu_mobile_hamburger" onclick="showModal()"> <!--!!!-->
+         <!--Button [ to toggle modal ] -->
+         <button class="menu_tablet_hamburger menu_mobile_hamburger" onclick="showModal()"> <!-- For styling hamburger with 3 horizontal lines in CSS -->
             <div class="menu_tablet_hamburger_bar menu_mobile_hamburger_bar"></div>
          </button>
          <nav class="menu_tablet_navigation menu_mobile_navigation hidden" >
@@ -81,7 +80,6 @@
       </div>
    </section>
 
-
    <section class="gallery">
       <div class="gallery_grid-container">
          <div class="gallery_grid-container_img1 item1"></div>
@@ -107,8 +105,6 @@
       </div>
    </section>
 
-
-
    <section class="contactf" id="uznemejiem">
       <div class="container">
          <div class="contactf_container">
@@ -133,7 +129,6 @@
         </div>
       </div>
    </section>
-
 
    <section class="sponsors">
       <div class="container">
@@ -195,6 +190,7 @@
          </div>
       </div>
    </footer>
+   <!-- To include dynamic scriping -->
    <script src="assets/js/theme.js"></script>
 </body>
 </html>
